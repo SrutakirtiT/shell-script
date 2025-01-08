@@ -4,7 +4,7 @@
 
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 2 ]; then
-  echo "Usage: $0 hello-world  dlrow-olleh"
+  echo "Usage: $0 hello-world"
   exit 1
 fi
 
