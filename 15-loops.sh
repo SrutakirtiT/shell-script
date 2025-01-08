@@ -32,12 +32,12 @@ fi
 for package in $@
 do
    dnf list install $package &>>$LOG_FILE
-   if [ $? -ne 0]
+   if [ $? -ne 0 ]
    then
        dnf install $package -y &>>$LOG_FILE
        VALIDATE $? "Installing $package"
     else
        echo -e "$package is already $Y ...INSTALLED $N"
     fi
-    
+
 done
